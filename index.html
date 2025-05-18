@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Flashcard Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+  <canvas id="starfield"></canvas>
+  </head>
+<body>
+
+  <div class="container">
+    <!-- Flashcards pile container -->
+    <div class="flashcards-container">
+      <!-- Flashcards will be dynamically injected here by JS -->
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button id="knowBtn" aria-label="Mark as Known">✅ Know</button>
+      <button id="dontKnowBtn" aria-label="Mark as Don't Know">❌ Don't Know</button>
+      <button id="flipBtn" aria-label="Flip Flashcard">🔁 Flip</button>
+    </div>
+
+    <!-- Progress Tracking -->
+    <div class="progress">
+      Known: <span id="knownCount">0</span> | Don't Know: <span id="dontKnowCount">0</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
